@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+* 
+{
+	box-sizing: border-box;
+}
+
+body 
+{
+   justify-content: center;
+   align-items: center;
+   
+   background: #201F23;
+   background-image: url('../img/home/mainhome_pc.png');
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   transition: background-color .5s;
+}
+.hometxt
+{
+	font-size:30px;
+	font-family:Share Tech Mono;
+	color:#479ECE;
+	margin-top:10%;
+	padding:10% 10% 0 10%;
+}
+
+.neons 
+{
+	margin-top:30%;
+	font-family: 'Codystar';
+	font-size: 52px;
+}
+
+.neons span 
+{
+	
+	font-weight: bold;
+	-webkit-animation: glow 2s ease-in-out infinite alternate;
+	-moz-animation: glow 2s ease-in-out infinite alternate;
+	animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow 
+{
+	from 
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #479ECE, 0 0 20px #479ECE, 0 0 30px #479ECE, 0 0 40px #479ECE, 0 0 50px #479ECE, 0 0 60px #479ECE, 0 0 70px #479ECE, 0 0 90px #479ECE;
+	}
+
+	to 
+	{
+		color: gray;
+		text-shadow: 0 0 20px #479ECE, 0 0 30px #479ECE, 0 0 40px #479ECE, 0 0 50px #479ECE, 0 0 60px #479ECE, 0 0 70px #479ECE, 0 0 80px #479ECE, 0 1 90px #479ECE;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+	body
+	{
+		background: #201F23;
+		background-image: url('../img/home/mainhome_mob.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.neons 
+	{
+		margin-top: 0%;
+		font-family: 'Codystar';
+		font-size: 25px;
+	}
+  .hometxt
+	{
+		font-size:20px;
+		margin-top:120%;
+		padding:10%;
+		text-align:justify;
+	}
+  
+}
+@media screen and (max-width: 450px) 
+{
+	.hometxt
+	{
+		font-size:20px;
+		margin-top:110%;
+		padding:10%;
+		text-align:justify;
+	}
+}
